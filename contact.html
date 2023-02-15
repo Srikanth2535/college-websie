@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="university.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <title> University Website</title>
+</head>
+<body>
+    <section class="sub-header">
+       <nav>
+        <a href="home.html"><img src="https://static.vecteezy.com/system/resources/previews/005/170/934/original/shield-college-university-logo-free-vector.jpg" height="65"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="university.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="course.html">Courses</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+       </nav>
+        
+     <h1>Contact Us</h1>
+    </section>
+<!----------------------------------------------------Contact us-------------------------------------------------------------->
+   <section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.8387207431238!2d78.5334683146697!3d17.323328988116966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcba26e59b5a44b%3A0xf9ceea7ddab4a12c!2sTKR%20College%20of%20Engineering%20%26%20Technology!5e0!3m2!1sen!2sin!4v1676481300887!5m2!1sen!2sin" 
+    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   </section>
+<section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="bi bi-house-fill"></i>
+                <span>
+                    <h5>Sagar Ring Road,LB Nagar</h5>
+                    <p>Hyderabad, Telangana, IN</p>
+                </span>
+            </div>
+            <div>
+                <i class="bi bi-phone-vibrate"></i>
+                <span>
+                    <h5>+91 0123456789</h5>
+                    <p>Monday to Saturday,9:30AM tO 5PM</p>
+                </span>
+            </div>
+            <div>
+                <i class="bi bi-envelope-open-fill"></i>
+                <span>
+                    <h5>info@mygmail.com</h5>
+                    <p>Email Us Your Query</p>
+                </span>
+            </div>
+        </div>
+        <div class="contact-col">
+            <form action="file.php" method="post">
+                <input type="text" name="name" placeholder="Enter Your Name" required>
+                <input type="email" name="email" placeholder="Enter Your Email" required>
+                <input type="text" name="subject"placeholder="Enter Your Subject" required>
+                <textarea rows="8" name="message"placeholder="message" required></textarea>
+                <button type="submit"class="link-btn" id="red-btn">Send message</button>
+            </form>
+        </div>
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!---------------------------------------------------------Footer-------------------------------------------------------------------->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. 
+        It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+        Richard McClintock, <br>a Latin professor at Hampden-Sydney College in Virginia, 
+        looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage</p>
+        <div class="icons">
+            <i class="bi bi-facebook"><a href="https://www.instagram.com/srikanthreddy_8040/"></a></i>
+            <i class="bi bi-twitter"><a href="https://mobile.twitter.com/Srikant12835634"></a></i>
+            <i class="bi bi-instagram"><a href="https://www.instagram.com/srikanthreddy_8040/"></a></i>
+            <i class="bi bi-linkedin"><a href="https://www.linkedin.com/in/srikanth-reddy-3139b0203/"></a></i>
+            <i class="bi bi-envelope-open-fill"><a href="mailto:srikanthreddy2580@gmail.com"></a></i>
+        </div>
+        <p>Made With <i class="bi bi-heart-fill"></i>Srikanth Reddy</p>
+</section>
+
+
+
+ <!----------------------------------------Javascript for Toggle Menu-------------------------------------------->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
